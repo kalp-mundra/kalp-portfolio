@@ -2,7 +2,7 @@
 
 A clean, interactive, single-page portfolio website built with pure HTML, CSS, and JavaScript. No frameworks, no build tools — just drop it in a repo and deploy.
 
-🌐 **Live:** [kalp-portfolio.vercel.app](https://kalp-portfolio.vercel.app)
+🌐 **Live:** [(https://kalpmundra-portfolio.vercel.app/)]
 
 ---
 
