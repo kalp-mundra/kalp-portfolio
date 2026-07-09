@@ -179,6 +179,12 @@ section { padding:5.5rem 2rem; }
   padding-left:1.1rem; position:relative; margin-bottom:.35rem;
 }
 .tl-bullets li::before { content:'▸'; position:absolute; left:0; color:var(--blue); font-size:.8rem; }
+.tl-link {
+  font-family:'JetBrains Mono',monospace; font-size:.78rem; color:var(--blue);
+  text-decoration:none; display:inline-flex; align-items:center; gap:.3rem;
+  margin-top:.4rem;
+}
+.tl-link:hover { text-decoration:underline; }
 
 /* PROJECTS */
 .projects-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:1.5rem; }
@@ -192,11 +198,13 @@ section { padding:5.5rem 2rem; }
 .proj-title { font-family:'Space Grotesk',sans-serif; font-size:1.1rem; font-weight:600; color:var(--ink); margin-bottom:.5rem; }
 .proj-desc { color:var(--ink3); font-size:.87rem; line-height:1.75; margin-bottom:1rem; flex:1; }
 .proj-tags { display:flex; flex-wrap:wrap; gap:.35rem; margin-bottom:1rem; }
+.proj-links { display:flex; gap:1rem; flex-wrap:wrap; }
 .proj-link {
   font-family:'JetBrains Mono',monospace; font-size:.77rem; color:var(--blue);
   text-decoration:none; display:inline-flex; align-items:center; gap:.3rem; transition:gap .18s;
 }
 .proj-link:hover { gap:.55rem; }
+.proj-link.demo { color:var(--teal); }
 
 /* SKILLS */
 .skills-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:1.25rem; }
@@ -333,7 +341,7 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
   <div class="hero-badge">Available for collaborations</div>
   <h1 class="hero-name">Kalp <span>Mundra</span></h1>
   <p class="hero-subtitle">Software Engineer · ML &amp; GenAI Developer · B.Tech CS (Data Science), SKIT</p>
-  <p class="hero-cgpa">CGPA 9.76 · Jaipur, Rajasthan</p>
+  <p class="hero-cgpa">CGPA 9.79 · Jaipur, Rajasthan</p>
   <div class="hero-ctas">
     <a href="#projects" class="btn btn-primary">View Projects</a>
     <a href="YOUR_RESUME_LINK_HERE" target="_blank" download class="btn btn-outline" style="display:inline-flex;align-items:center;gap:.5rem;">
@@ -356,8 +364,8 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
         <p>I specialise in <strong>NLP, LLM integration, speech pipelines</strong>, and <strong>REST API development</strong>. Whether it's wiring Groq and Gemini APIs with structured prompt engineering, or architecting a normalised MySQL schema — I care about the full picture.</p>
         <p>Currently working as a <strong>Software Engineer at AppPerfect Corporation</strong>, while continuing to build and deploy end-to-end ML projects.</p>
         <div class="stat-row">
-          <div class="stat"><div class="stat-num">9.76</div><div class="stat-lbl">CGPA</div></div>
-          <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Experiences</div></div>
+          <div class="stat"><div class="stat-num">9.79</div><div class="stat-lbl">CGPA</div></div>
+          <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Experiences</div></div>
           <div class="stat"><div class="stat-num">3+</div><div class="stat-lbl">Projects</div></div>
           <div class="stat"><div class="stat-num">95.6%</div><div class="stat-lbl">HSC Score</div></div>
         </div>
@@ -401,10 +409,44 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <div class="tl-tech">
             <span class="tag">Full-time</span>
             <span class="tag">Software Engineering</span>
+            <span class="tag">DevOps</span>
+            <span class="tag">NVIDIA</span>
+            <span class="tag">Cluster Management</span>
           </div>
           <ul class="tl-bullets">
-            <li>Full-time software engineering role at AppPerfect Corporation, Udaipur — contributing to product development and engineering initiatives.</li>
+            <li>Full-time Software Engineer at AppPerfect Corporation, Udaipur — contributing to product development and engineering initiatives.</li>
+            <li>Actively building DevOps expertise, with core focus on an <strong>NVIDIA cluster project</strong> — handling cluster bring-up and end-to-end monitoring.</li>
+            <li>Working hands-on with infrastructure tooling (Docker, Kubernetes, Slurm, Prometheus, Grafana) to support reliable GPU cluster operations.</li>
           </ul>
+        </div>
+      </div>
+
+      <!-- Celebal Technologies -->
+      <div class="tl-item fi">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <div class="tl-role">Data Science Intern</div>
+              <div class="tl-company">Celebal Technologies · Jaipur, Rajasthan</div>
+            </div>
+            <span class="tl-date">Jun 2026 – Jul 2026</span>
+          </div>
+          <div class="tl-tech">
+            <span class="tag">Data Science</span>
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">GenAI</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>2-month Data Science internship at Celebal Technologies, Jaipur.</li>
+            <li>Built a deep, practical understanding of <strong>Python, Machine Learning, Deep Learning, and Generative AI</strong> through structured weekly assignments and hands-on exercises.</li>
+          </ul>
+          <a href="https://github.com/kalp-mundra/CEI_Assignments" target="_blank" class="tl-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            Weekly Assignments Repo →
+          </a>
         </div>
       </div>
 
@@ -417,7 +459,7 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
               <div class="tl-role">Backend Developer Intern</div>
               <div class="tl-company">Claremont Education LLP · Delhi (Remote)</div>
             </div>
-            <span class="tl-date">May 2026 – Jul 2026</span>
+            <span class="tl-date">Apr 2026 – May 2026</span>
           </div>
           <div class="tl-tech">
             <span class="tag">FastAPI</span><span class="tag">Groq API</span><span class="tag">Gemini API</span>
@@ -428,6 +470,10 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
             <li>Engineered a two-stage voice pipeline: Faster-Whisper STT with user verification before any LLM call, eliminating wasted API usage.</li>
             <li>Integrated Groq + Gemini APIs with automatic provider failover; LLM response streams immediately while Edge-TTS synthesis runs in parallel — audio button appears 1–2s later.</li>
           </ul>
+          <a href="https://student-voice-assistant.vercel.app/" target="_blank" class="tl-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Live Demo (Teachifyy) →
+          </a>
         </div>
       </div>
 
@@ -472,7 +518,10 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <span class="tag">FastAPI</span><span class="tag">MySQL</span><span class="tag">NLP</span>
           <span class="tag">Groq API</span><span class="tag">Sentence Transformers</span><span class="tag">Streamlit</span>
         </div>
-        <a href="#" class="proj-link">GitHub →</a>
+        <div class="proj-links">
+          <a href="https://github.com/kalp-mundra" target="_blank" class="proj-link">GitHub Repo →</a>
+          <a href="YOUR_LIVE_DEMO_LINK_HERE" target="_blank" class="proj-link demo">Live Demo →</a>
+        </div>
       </div>
 
       <div class="proj-card fi">
@@ -483,7 +532,10 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <span class="tag">XGBoost</span><span class="tag">TF-IDF</span>
           <span class="tag">SHAP</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span>
         </div>
-        <a href="#" class="proj-link">GitHub →</a>
+        <div class="proj-links">
+          <a href="YOUR_GITHUB_LINK_HERE" target="_blank" class="proj-link">GitHub Repo →</a>
+          <a href="YOUR_LIVE_DEMO_LINK_HERE" target="_blank" class="proj-link demo">Live Demo →</a>
+        </div>
       </div>
 
       <div class="proj-card fi">
@@ -494,7 +546,36 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <span class="tag">Scikit-learn</span><span class="tag">Pandas</span>
           <span class="tag">Streamlit Cloud</span><span class="tag">GitHub CI</span>
         </div>
-        <a href="#" class="proj-link">Live Demo →</a>
+        <div class="proj-links">
+          <a href="https://github.com/kalp-mundra/mobile-recommender" target="_blank" class="proj-link">GitHub Repo →</a>
+          <a href="YOUR_LIVE_DEMO_LINK_HERE" target="_blank" class="proj-link demo">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi">
+        <div class="proj-num">Project 04</div>
+        <div class="proj-title">Driver Drowsiness Alert System</div>
+        <div class="proj-desc">Real-time computer vision system that monitors eye-closure and head-pose patterns via webcam to detect driver fatigue, triggering an audible alert before a micro-sleep event occurs.</div>
+        <div class="proj-tags">
+          <span class="tag">OpenCV</span><span class="tag">Python</span>
+          <span class="tag">Computer Vision</span><span class="tag">Real-Time Detection</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/kalp-mundra/driver-drowsiness-detection" target="_blank" class="proj-link">GitHub Repo →</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi">
+        <div class="proj-num">Project 05</div>
+        <div class="proj-title">Teachifyy — Student Voice Tutor</div>
+        <div class="proj-desc">Multilingual voice-and-text AI tutor supporting English, Hindi, and Hinglish. Two-stage Faster-Whisper STT pipeline with user verification before any LLM call, Groq + Gemini failover, and parallel Edge-TTS synthesis for near-instant responses.</div>
+        <div class="proj-tags">
+          <span class="tag">FastAPI</span><span class="tag">Groq API</span><span class="tag">Gemini API</span>
+          <span class="tag">Faster-Whisper</span><span class="tag">Edge-TTS</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://student-voice-assistant.vercel.app/" target="_blank" class="proj-link demo">Live Demo →</a>
+        </div>
       </div>
 
     </div>
@@ -551,6 +632,19 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <span class="chip">FastAPI</span><span class="chip">REST APIs</span>
           <span class="chip">MySQL</span><span class="chip">SQLAlchemy ORM</span>
           <span class="chip">Streaming Responses</span>
+        </div>
+      </div>
+
+      <div class="sk-group fi">
+        <div class="sk-group-title">
+          <div class="sk-ico" style="background:#EFF6FF">🐳</div>DevOps &amp; Infrastructure
+        </div>
+        <div class="sk-chips">
+          <span class="chip">Docker</span><span class="chip">Kubernetes</span>
+          <span class="chip">Terraform</span><span class="chip">Prometheus</span>
+          <span class="chip">Grafana</span><span class="chip">Slurm</span>
+          <span class="chip">NVIDIA Cluster Bring-up</span><span class="chip">Cluster Monitoring</span>
+          <span class="chip">Git</span><span class="chip">Linux Terminal</span>
         </div>
       </div>
 
@@ -684,7 +778,7 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <div class="rh-num">🎓</div>
           <div class="rh-text">
             <strong>Education</strong>
-            <span>B.Tech CS (Data Science) at SKIT · CGPA 9.76 · 2023–2027</span>
+            <span>B.Tech CS (Data Science) at SKIT · CGPA 9.79 · 2023–2027</span>
           </div>
         </div>
         <div class="rh-item">
@@ -698,7 +792,7 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <div class="rh-num">🛠️</div>
           <div class="rh-text">
             <strong>Core Skills</strong>
-            <span>Python · FastAPI · ML/NLP · GenAI · LLMs · MySQL · Streamlit</span>
+            <span>Python · FastAPI · ML/NLP · GenAI · LLMs · MySQL · Streamlit · DevOps</span>
           </div>
         </div>
         <div class="rh-item">
@@ -712,7 +806,7 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <div class="rh-num">🚀</div>
           <div class="rh-text">
             <strong>Projects</strong>
-            <span>Smart Recruitment System · Fake Job Detector · Mobile Recommender</span>
+            <span>Smart Recruitment System · Fake Job Detector · Mobile Recommender · Teachifyy</span>
           </div>
         </div>
       </div>
@@ -737,7 +831,7 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           LinkedIn
         </a>
-        <a href="https://github.com" target="_blank" class="contact-chip">
+        <a href="https://github.com/kalp-mundra" target="_blank" class="contact-chip">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           GitHub
         </a>
@@ -773,6 +867,7 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
     {label:'NLP',     value:.90},
     {label:'DSA',     value:.80},
     {label:'Speech',  value:.78},
+    {label:'DevOps',  value:.75},
   ];
   const n=axes.length;
   const ang=i=>(2*Math.PI*i/n)-Math.PI/2;
@@ -833,7 +928,7 @@ footer { text-align:center; padding:2rem; color:var(--ink3); font-size:.8rem; bo
   obs.observe(document.getElementById('radar-svg'));
 
   const legend=document.getElementById('r-legend');
-  const cs=['#2563EB','#3B82F6','#60A5FA','#93C5FD','#0D9488','#14B8A6'];
+  const cs=['#2563EB','#3B82F6','#60A5FA','#93C5FD','#0D9488','#14B8A6','#0F766E'];
   axes.forEach((ax,i)=>{
     const el=document.createElement('div');el.className='legend-item';
     el.innerHTML=`<div class="legend-dot" style="background:${cs[i]}"></div>${ax.label}: ${Math.round(ax.value*100)}%`;
